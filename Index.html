@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>FoodCourt</title>
+   
+    <script src="https://kit.fontawesome.com/bb3047c55a.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!--Navigation-->
+
+    <nav class="navbar navbar-expand-md nbar navbar-dark" style="padding-top: 25px;">
+
+        <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <img src="pic/logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ab" style="background:#d7444f">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ab" style=" justify-content: flex-end;">
+            <ul class="nav navbar-nav padding">
+                <li class="nav-item">
+                    <a class="nav-link navbox" href="#">Food Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbox" href="#">Restaurents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbox" href="#">Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbox" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbox" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!--srch btn-->
+        <div class="collapse navbar-collapse" id="ab" style=" justify-content: flex-end;">
+        <ul class="nav navbar-nav srch" style="display: block;">
+            <li class="nav-item m-1">
+                <button id="search-button" type="button" class="btn btnfour">
+                    <i class="fas fa-search"></i>
+                  </button>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="ab" style=" justify-content: flex-end;">
+        <ul class="nav navbar-nav" style="flex-direction: row;">
+            <li class="nav-item m-1">
+                <button id="search-button" type="button" class="btn hvr" >
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+          </li>
+          <li class="nav-item m-1"> 
+                <button id="search-button" type="button" class="btn hvr" data-toggle="modal" data-target="#modaltwo">
+                  log in
+                </button>
+          </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+
+    <div class="hrbgd">
+
+        <div class="container">
+            <hr class="hr1">
+        </div>
+
+    </div>
+
+    <!--Banner-->
+
+
+    <div class="banner">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 bannerbox" >
+            
+                    <div class="font1">
+                        Hungry? You're 
+                        in right place
+                    </div>
+                    <div class="font2">
+                        Our job is to filling your tummy with delicious food 
+                        and with fast and free delivar
+                    </div>
+                    <button id="search-button" type="button" class="btn hvr mt-5" style="background-color: #d7444f; color: white; font-size: 16px;">
+                        Find Restaurents
+                    </button>    
+            </div>
+        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-7 col-12">
+            <img src="pic/bnner.png" width="100%"/>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!--body start-->
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="box">
+            Just Relax at Home,<br>
+            we wil take care.
+        </div>
+    </div>
+    
+        <div class="container">
+            <div class="row" style="justify-content: space-around; padding: 2% 0px 3% 0px;">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12">
+                    <img src="pic/deli.png" width="100%"/>
+                    <div class="boxin">
+                       Fast delivay in 1 hour
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12">
+                    <img src="pic/web.png" width="100%"/>
+                    <div class="boxin">
+                        Easy To Order by<br> Web or App
+                     </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12">
+                    <img src="pic/map.png" width="100%"/>
+                    <div class="boxin">
+                        Wide Covarage Map <br> around the world
+                     </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12">
+                    <img src="pic/delivary.png" width="100%"/>
+                    <div class="boxin">
+                        More Than 100+<br> Countries
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!--Banner2-->
+        <div class="banner1" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 bannerbox">
+                        <div class="font1">
+                            Real Delicious Food Straight To Your Door
+                        </div>
+                        <div class="font2">
+                            Besides the many and delicious
+                        </div>
+                        <button id="search-button" type="button" class="btn hvr mt-5" >
+                            I Want to Order
+                        </button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img src="pic/ber.png" width="100%"/>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 bannerbox">
+                        <hr class="hr2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Items shop-->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="box">
+                Discover Our Menu
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <!-- Nav tabs -->
+<ul class="nav nav-tabs navtab">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#pizza">Pizza</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#pasta">Pasta</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#burger">Burger</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#sides">Sides</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#desserts">Desserts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#drink">Drinks</a>
+      </li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+      <!--Pizza-->
+    <div class="tab-pane container active" id="pizza">
+        <div>
+            <div class="row" style="justify-content: space-between;">
+                <!-- pizza 1st row-->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                        <div class="boxtwo">
+                            <img src="pic/1.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                        <div class="box1">
+                           Pizza with Parmesan
+                        </div>
+                        <div class="box1">
+                            <a class="btnone">
+                                <i class="fas fa-star"></i>
+                            </a>
+                              4.5 * 10-30 min
+                        </div>
+                        <div class="boxthree" data-toggle="modal" data-target="#modalone">
+                            $30.00
+                            <button id="search-button" type="button" class="btn btntwo" >
+                                Order Now
+                              </button>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                        <div class="boxtwo">
+                            <img src="pic/2.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                        <div class="box1">
+                           Vegitarian Pizza
+                        </div>
+                        <div class="box1">
+                            <a class="btnone">
+                                <i class="fas fa-star"></i>
+                            </a>
+                              4.5 * 10-30 min
+                        </div>
+                        <div class="boxthree" >
+                            $20.00
+                            <button id="search-button" type="button" class="btn btntwo" >
+                                Order Now
+                              </button>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone">
+                        <div class="boxtwo">
+                            <img src="pic/3.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                        <div class="box1">
+                           Pizza with Mussels
+                        </div>
+                        <div class="box1">
+                            <a class="btnone">
+                                <i class="fas fa-star"></i>
+                            </a>
+                              4.5 * 10-30 min
+                        </div>
+                        <div class="boxthree" >
+                            $15.00
+                            <button id="search-button" type="button" class="btn btntwo" >
+                                Order Now
+                              </button>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone">
+                        <div class="boxtwo">
+                            <img src="pic/4.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                        <div class="box1">
+                           American Pizza
+                        </div>
+                        <div class="box1">
+                            <a class="btnone">
+                                <i class="fas fa-star"></i>
+                            </a>
+                              4.5 * 10-30 min
+                        </div>
+                        <div class="boxthree" >
+                            $30.00
+                            <button id="search-button" type="button" class="btn btntwo" >
+                                Order Now
+                              </button>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                    <!--pizza 1st row end-->
+            
+
+
+            
+                <!-- pizza 2st row-->
+                    
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                    <div class="boxtwo">
+                        <img src="pic/5.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                    <div class="box1">
+                       Italian Pizza
+                    </div>
+                    <div class="box1">
+                        <a class="btnone">
+                            <i class="fas fa-star"></i>
+                        </a>
+                          4.5 * 10-30 min
+                    </div>
+                    <div class="boxthree" >
+                        $90.00
+                        <button id="search-button" type="button" class="btn btntwo" >
+                            Order Now
+                          </button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                    <div class="boxtwo">
+                        <img src="pic/6.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                    <div class="box1">
+                       Vegitable Pizza
+                    </div>
+                    <div class="box1">
+                        <a class="btnone">
+                            <i class="fas fa-star"></i>
+                        </a>
+                          4.5 * 10-30 min
+                    </div>
+                    <div class="boxthree" >
+                        $130.00
+                        <button id="search-button" type="button" class="btn btntwo" >
+                            Order Now
+                          </button>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                    <div class="boxtwo">
+                        <img src="pic/7.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                    <div class="box1">
+                       Mushroom Pizza
+                    </div>
+                    <div class="box1">
+                        <a class="btnone">
+                            <i class="fas fa-star"></i>
+                        </a>
+                          4.5 * 10-30 min
+                    </div>
+                    <div class="boxthree" >
+                        $20.00
+                        <button id="search-button" type="button" class="btn btntwo" >
+                            Order Now
+                          </button>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 boxone" >
+                    <div class="boxtwo">
+                        <img src="pic/8.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+                    <div class="box1">
+                       Cheese Pizza
+                    </div>
+                    <div class="box1">
+                        <a class="btnone">
+                            <i class="fas fa-star"></i>
+                        </a>
+                          4.5 * 10-30 min
+                    </div>
+                    <div class="boxthree">
+                        $30.00
+                        <button id="search-button" type="button" class="btn btntwo" >
+                            Order Now
+                          </button>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+
+                    <!--pizza 2st row end-->
+            </div>
+
+
+        </div>
+    </div>
+    <!--Pizza end-->
+    <!--Pasta start-->
+    <div class="tab-pane container fade" id="pasta">pasta</div>
+    <!--Pasta end-->
+    <div class="tab-pane container fade" id="burger">burger</div>
+  </div> 
+            </div>
+        </div>
+
+        <!--Banner3-->
+
+
+        <div class="bannerone" >
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12 bannerbox" >
+                        <div class="font3">
+                            Download The App Now
+                        </div>
+                        <div class="font4">
+                            Discover food whereever and when ever and get your 
+                            food delivered quickly.
+                        </div>
+                        <div class="btnthree">
+                            <button id="search-button" type="button" class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 btn hvr3 mt-3" >
+                                Download for Android
+                            </button>    
+                            <button id="search-button" type="button" class=" col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 btn hvr3 mt-3 ">
+                                Download for IOS
+                            </button>
+                        </div>
+                         
+                </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                <img src="pic/bann.png" width="100%"/>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <!--Footer-->
+
+
+        <div class="footer1"style="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="padding-bottom: 2%;">
+                        <img src="pic/logo.png"/>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="font2" style="color: #f6f6f6;">
+                            Our job is to filling your tummy with delicious 
+                            food and with fast and free delivar.
+                        </div>
+                        <div >
+                            <a href="#" class="icon">
+                                <i class="fab fa-facebook-square" width="100%"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="footerbox">
+
+                            <ul style="list-style: none;" >
+                                <li class="textone">Services</li>
+                                <li><a href="#">Delivary</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Polices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="footerbox">
+                            <ul style="list-style: none;">
+                                <li class="textone">Users</li>
+                                <li><a href="#">User Login</a></li>
+                                <li><a href="#">User Register</a></li>
+                                <li><a href="#">Forgot Password</a></li>
+                                <li><a href="#">Account Setting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="footerbox">
+                            <ul style="list-style: none;">
+                                <li class="textone">Pages</li>
+                                <li><a href="#">Near Restaurant</a></li>
+                                <li><a href="#">Restaurant Details</a></li>
+                                <li><a href="#">Availble Country</a></li>
+                                <li><a href="#">Shipping Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        
+<!--modal-->
+<div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="pic/1.jpg" width="100%" style="border-radius: 5px 5px 0% 0%;"/>
+            <div >
+                <h4>Pizza with Parmesan</h4>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Number">
+                  </div>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <!--<div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>-->
+                <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+              </form>
+
+              <label for="exampleInputEmail1"></label>
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+
+              </select>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--modal2-->
+<div class="modal fade" id="modaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">Log In</h3>
+          <small style="padding-top: 18px">or <a href="#">Create New Account</a></small>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <!--<div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                  </div>-->
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Number">
+                  </div>
+
+                <!--<div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>-->
+                <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+              </form>
+
+              <!--<label for="exampleInputEmail1"></label>
+              <select class="form-control">
+              </select>-->
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btnfive">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal3-->
+<div class="modal fade" id="modalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLongTitle">Log In</h3>
+          <small style="padding-top: 18px">or <a href="#">Create New Account</a></small>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <!--<div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                  </div>-->
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Number">
+                  </div>
+
+                <!--<div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>-->
+                <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+              </form>
+
+              <!--<label for="exampleInputEmail1"></label>
+              <select class="form-control">
+              </select>-->
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btnfive">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--whatsapp-->
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?39106';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#d7444f",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Food Court",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#d7444f",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"919446052045"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+    
+</body>
+</html>

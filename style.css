@@ -1,0 +1,228 @@
+/*font*/
+
+@font-face {
+    font-family: heavy;
+    src: url(font/futura/Futura\ Heavy\ font.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(font/futura/futura\ light\ bt.ttf);
+}
+@font-face{
+    font-family: bold;
+    src:url(font/futura/Futura\ Bold\ font.ttf);
+}
+@font-face{
+    font-family: medium;
+    src:url(font/futura/Futura\ Book\ font.ttf);
+}
+/* Navigation */
+.nbar{
+    background-color: #feeccb;
+}
+.hrbgd{
+    background-color: #feeccb;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    padding-right: 2rem;
+}
+/*banner */
+.banner{
+    width: 100%;
+    height: auto;
+    background-color: #feeccb;
+}
+.banner1{
+    width: 100%;
+    height: auto;
+    background-color: #feeccb;
+    padding: 4% 0px 4% 0px;
+}
+.bannerbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.font1{
+    font-size: 42px;
+    font-family: heavy;
+}
+.font2{
+    font-size: 15px;
+    font-family: light;
+    width: 100%;
+}
+.hr2{
+    margin-top: 0rem; 
+    border-radius: 1px; 
+    border-top: 8px solid #fe978e; 
+    margin-bottom: 0rem; width: 100%;
+}
+/*body*/
+
+.box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3% 0px 2% 0px;
+    font-family: medium;
+    font-size: 18px;
+}
+.boxin{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4% 0px 4% 0px;
+    font-size: 12px;
+    font-family: medium;
+    font-weight: 600;
+}
+.nav-tabs .nav-link.active {
+    color: red;
+}
+
+.hvr{
+    background-color: #d7444f;
+     color: white; 
+     font-size: 17px;
+}
+.hr1{
+    margin-top: 0rem;
+    border-top: 2px solid #d8444f; 
+    margin-bottom: 0rem;
+}
+.hvr3{
+    background-color: #afcdfb; 
+    color: #1e3858; 
+    font-size: 16px; 
+    
+}
+.navtab{
+    justify-content: space-around; 
+    border-bottom: 1px solid #ffffff;
+}
+tab-content{
+    padding-top: 2%; 
+    padding-bottom: 4%;
+}
+.font3{
+    font-size: 42px;
+    font-family: heavy;
+    color: #f6f6f6;
+}
+.font4{
+    font-size: 15px;
+    font-family: light;
+    color: #f6f6f6;
+}
+.boxone{
+    padding-top: 3%; 
+    padding-bottom: 3%;
+}
+.btnone{
+    background-color: white;
+    color: #ffca09; 
+    font-size: 17px;
+}
+.btntwo{
+    background-color: #d7444f; 
+    color: #ffffff; 
+    font-size: 12px;
+}
+a:hover {
+    color: #466eb6;
+    text-decoration: none;
+}
+.btntwo:hover{
+    color: #e7e7e7 ;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    padding-bottom: 10px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color:#d7444f;
+}
+.btnfive{
+    background: #d7444f;
+    width: 100%;
+    color: white;
+}
+/*menu*/
+
+.box1{
+    width: 100%;
+    padding: 4% 6% 2% 6%;
+}
+.bannerone{
+    width: 100%;
+    height: auto;
+    background-color: #1e3858;
+}
+.btnthree{  
+    width: 100%; 
+    color: #d7444f; 
+    font-size: 17px;
+}
+.boxtwo{
+    box-shadow: #adadad 0px 0px 2px;
+    border-radius: 5px 5px 5px 5px;
+}
+.boxthree{
+    display: flex ;
+    justify-content: space-between; 
+    border-radius: 0px 0px 5px 5px;
+    padding: 4% 6% 12% 6%;
+}
+.btnfour{
+    background-color: #ffdfa8;
+    color: #d7444f;
+}
+.hvr:hover{
+    color: #ffdfa8;
+}
+.padding li a:hover{
+    color: red;
+}
+/*footer*/
+.footerbox ul li{
+   padding-bottom: 5%;
+}
+.footerbox ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer ul li a:hover{
+    color: rgb(136, 217, 255);
+}
+.footerbox{
+    color: white;
+}
+.footer1{
+    padding: 3% 0px; 
+    background-color: #2a2a2a;
+}
+.icon{
+    color: #d5444e;
+    background: #2a2a2a; 
+    border: none; 
+    font-size: 30px;
+}
+.textone{
+    font-size: 20px;
+    font-family: heavy;
+    font-weight: 500;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #ffffff;
+    background-color: #d7444f;
+    /* border-color: #dee2e6 #dee2e6 #fff; */
+    border-radius: 50px;
+    /* width: 100px; */
+    /* padding: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
+}
